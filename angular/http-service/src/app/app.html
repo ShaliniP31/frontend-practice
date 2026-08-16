@@ -1,0 +1,5 @@
+<button (click)="fetchAllPosts()">Get Posts</button>
+@for (post of posts(); track post.id){
+<div>
+  <span>{{post.id}}: {{post.title}}</span>
+</div>}
