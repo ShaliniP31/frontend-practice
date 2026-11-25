@@ -1,0 +1,13 @@
+<mat-toolbar class="main-header">
+   <button matButton>
+    <mat-icon aria-hidden="false" aria-label="Home" fontIcon="store"></mat-icon>
+   </button>
+
+   <span class="branding">Shopping Products</span>
+
+   <span class="spacer"></span>
+
+   <button matButton>
+    <mat-icon aria-hidden="false" aria-label="Cart" fontIcon="shopping_cart" [matBadge]="cartService.cartCount()"></mat-icon>
+   </button>
+</mat-toolbar>
